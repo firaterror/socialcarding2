@@ -3,16 +3,12 @@
 // https://docs.sentry.io/platforms/javascript/guides/nextjs/
 
 import * as Sentry from "@sentry/nextjs";
-import { ProfilingIntegration } from "@sentry/profiling-node";
 
 Sentry.init({
   dsn: "https://3c5052de248f436624987f79db79c471@o4506208167788544.ingest.sentry.io/4506213200035840",
-  
 
   // Adjust this value in production, or use tracesSampler for greater control
   tracesSampleRate: 1,
-  profilesSampleRate: 1.0
-
 
   // Setting this option to true will print useful information to the console while you're setting up Sentry.
   debug: false,
