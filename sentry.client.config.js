@@ -11,7 +11,7 @@ Sentry.init({
 
   // Adjust this value in production, or use tracesSampler for greater control
   tracesSampleRate: 1,
-  profilesSampleRate: 1.0,
+  profilesSampleRate: 1.0
 
 
   // Setting this option to true will print useful information to the console while you're setting up Sentry.
@@ -25,7 +25,6 @@ Sentry.init({
 
   // You can remove this option if you're not planning to use the Sentry Session Replay feature:
   integrations: [
-    new ProfilingIntegration(),
     new Sentry.Replay({
       // Additional Replay configuration goes in here, for example:
       maskAllText: true,
